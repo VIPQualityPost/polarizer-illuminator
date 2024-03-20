@@ -4561,8 +4561,8 @@
 						(type none)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 0 0)
+				(pin passive line
+					(at -10.16 5.08 0)
 					(length 2.54)
 					(name "B1"
 						(effects
@@ -4597,8 +4597,8 @@
 						)
 					)
 				)
-				(pin bidirectional line
-					(at -10.16 5.08 0)
+				(pin passive line
+					(at -10.16 0 0)
 					(length 2.54)
 					(name "B0"
 						(effects
@@ -4615,7 +4615,7 @@
 						)
 					)
 				)
-				(pin bidirectional line
+				(pin passive line
 					(at 10.16 0 180)
 					(length 2.54)
 					(name "A"
@@ -5435,6 +5435,12 @@
 		(uuid "acd58acc-542f-4c6e-863b-61471382da2e")
 	)
 	(junction
+		(at 177.8 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c84518f3-796f-418e-b03f-cc922c13f980")
+	)
+	(junction
 		(at 267.97 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5469,6 +5475,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d78b750d-bfc6-4ed7-a9f6-b9654564017a")
+	)
+	(junction
+		(at 172.72 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dbb930b9-c200-40cb-8baa-8bc3f9917cae")
 	)
 	(junction
 		(at 72.39 157.48)
@@ -6060,6 +6072,26 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 115.57) (xy 172.72 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36db6f31-173c-467a-8040-4295a20d24e8")
+	)
+	(wire
+		(pts
+			(xy 172.72 115.57) (xy 177.8 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3877b670-80d2-40dc-9981-65f6885b0190")
+	)
+	(wire
+		(pts
 			(xy 49.53 71.12) (xy 57.15 71.12)
 		)
 		(stroke
@@ -6280,7 +6312,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 107.95) (xy 181.61 107.95)
+			(xy 163.83 107.95) (xy 172.72 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6777,6 +6809,16 @@
 			(type default)
 		)
 		(uuid "908f3606-96b8-4d1c-9bad-b43e47a098e4")
+	)
+	(wire
+		(pts
+			(xy 172.72 107.95) (xy 181.61 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91eda9f6-6250-499e-ad8d-e918256d9384")
 	)
 	(wire
 		(pts
@@ -7547,6 +7589,16 @@
 			(type default)
 		)
 		(uuid "fc2da7fc-be11-4749-bf34-1fde579beefb")
+	)
+	(wire
+		(pts
+			(xy 172.72 107.95) (xy 172.72 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcec050a-fb70-4475-b837-8f817bdd181e")
 	)
 	(wire
 		(pts
@@ -14938,6 +14990,84 @@
 			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 172.72 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4eb976be-1bc3-4e85-a375-10b1abef4222")
+		(property "Reference" "R106"
+			(at 170.18 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 170.18 113.0299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 172.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 172.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC ID" "C25744"
+			(at 172.72 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee127701-eedc-42de-9b81-c53a52c7f598")
+		)
+		(pin "1"
+			(uuid "6ab07406-b787-4169-ab42-6a5ada75088b")
+		)
+		(instances
+			(project "illuminator"
+				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
+					(reference "R106")
 					(unit 1)
 				)
 			)
