@@ -1670,7 +1670,7 @@
 			(uuid "0557e818-eb2d-48f6-9e54-c5affd0e95b4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "#PWR0202")
 					(unit 1)
@@ -1749,7 +1749,7 @@
 			(uuid "3f48215e-cdf5-4390-8973-a0212989626f")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R203")
 					(unit 1)
@@ -1828,7 +1828,7 @@
 			(uuid "0b624894-25c3-4784-80b7-0316d001d779")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D228")
 					(unit 1)
@@ -1907,7 +1907,7 @@
 			(uuid "22ab9945-8e83-4bef-8aeb-2ff32c1dee98")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D227")
 					(unit 1)
@@ -1986,7 +1986,7 @@
 			(uuid "b5878a67-66ae-4d0f-969e-1259741027b5")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D229")
 					(unit 1)
@@ -2065,7 +2065,7 @@
 			(uuid "5293581a-83c9-4781-9342-980662bbc71a")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D204")
 					(unit 1)
@@ -2144,7 +2144,7 @@
 			(uuid "0391dd10-72a0-45b5-b65e-8c243c307b8c")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D201")
 					(unit 1)
@@ -2222,7 +2222,7 @@
 			(uuid "3dfbb77a-5e4a-4bc7-af75-158b5bd2f97f")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R204")
 					(unit 1)
@@ -2288,7 +2288,7 @@
 			(uuid "dae16113-0006-4060-9e25-205fa9fa914a")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "#PWR0203")
 					(unit 1)
@@ -2367,7 +2367,7 @@
 			(uuid "a9eea1db-ff9a-42a9-8676-8a5796662640")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D203")
 					(unit 1)
@@ -2446,7 +2446,7 @@
 			(uuid "88211534-ed68-4165-8842-f6823e250687")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D205")
 					(unit 1)
@@ -2525,7 +2525,7 @@
 			(uuid "eb9003c4-f0ed-4498-8d5a-f274162575a9")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D226")
 					(unit 1)
@@ -2604,7 +2604,7 @@
 			(uuid "90df1029-3a46-4404-87df-df0b2b3a1ba6")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D230")
 					(unit 1)
@@ -2683,7 +2683,7 @@
 			(uuid "2b425bf9-bf0a-4377-94ba-4dd6e4e37fd4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D225")
 					(unit 1)
@@ -2762,7 +2762,7 @@
 			(uuid "50f01f0a-2795-4ba1-b740-21e02b2b1b8d")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D215")
 					(unit 1)
@@ -2841,7 +2841,7 @@
 			(uuid "162bcc3b-608a-4be9-b4d5-0232285ee365")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D216")
 					(unit 1)
@@ -2920,7 +2920,7 @@
 			(uuid "1a7a59e7-ea62-41f7-8048-73a240d864a6")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D213")
 					(unit 1)
@@ -2999,7 +2999,7 @@
 			(uuid "2665ecf7-c871-49bd-9238-89200a656174")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D218")
 					(unit 1)
@@ -3078,7 +3078,7 @@
 			(uuid "3134e4ea-c5d4-4193-8a52-b2a561c701e2")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R205")
 					(unit 1)
@@ -3157,7 +3157,7 @@
 			(uuid "02541235-e424-4fa1-8e34-4bed25aaba76")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D214")
 					(unit 1)
@@ -3236,7 +3236,7 @@
 			(uuid "7cb26d93-7bc8-4765-8d3d-6dd88746487b")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R207")
 					(unit 1)
@@ -3315,7 +3315,7 @@
 			(uuid "533574af-f40d-4868-869a-07824b1028f7")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D217")
 					(unit 1)
@@ -3392,7 +3392,7 @@
 			(uuid "e0d48c4a-11c9-471e-80af-b8603b6dae8c")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R202")
 					(unit 1)
@@ -3458,7 +3458,7 @@
 			(uuid "c9c2722b-9e06-4fbf-8246-220a59c3c249")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "#PWR0201")
 					(unit 1)
@@ -3537,7 +3537,7 @@
 			(uuid "ff587e8f-f8c9-40f6-bfa4-793dbf54df57")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D206")
 					(unit 1)
@@ -3616,7 +3616,7 @@
 			(uuid "392c6efe-72ba-4c59-a7fa-8937cd59a882")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "D202")
 					(unit 1)
@@ -3694,7 +3694,7 @@
 			(uuid "c92a735d-a596-4f89-b077-5c7897e7dfdd")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R201")
 					(unit 1)
@@ -3779,7 +3779,7 @@
 			(uuid "bf5666cd-b4f9-40d8-bb3a-04d23a89e587")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "Q202")
 					(unit 1)
@@ -3858,7 +3858,7 @@
 			(uuid "59d6f330-aca5-448b-ba50-8ad7da1e8266")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R206")
 					(unit 1)
@@ -3940,7 +3940,7 @@
 			(uuid "3e806252-6164-485a-9ad8-3e66e7de5806")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "Q201")
 					(unit 1)
@@ -4018,7 +4018,7 @@
 			(uuid "528fcb59-cb2d-40c0-a768-9dc63bd583e9")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e/4d3a2e65-baea-4357-b694-46b6c919725f"
 					(reference "R208")
 					(unit 1)

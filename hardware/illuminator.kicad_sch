@@ -4301,7 +4301,7 @@
 						(type background)
 					)
 				)
-				(pin power_in line
+				(pin power_out line
 					(at 12.7 3.81 180)
 					(length 5.08)
 					(name "OUT"
@@ -4425,7 +4425,7 @@
 						(type background)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -12.7 90)
 					(length 5.08)
 					(name "GND"
@@ -4443,7 +4443,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -11.43 0 0)
 					(length 5.08)
 					(name "Vin"
@@ -4461,7 +4461,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_out line
 					(at 11.43 0 180)
 					(length 5.08)
 					(name "Vout"
@@ -4561,7 +4561,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -10.16 0 0)
 					(length 2.54)
 					(name "B1"
@@ -4579,7 +4579,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
 					(name "GND"
@@ -4597,7 +4597,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -10.16 5.08 0)
 					(length 2.54)
 					(name "B0"
@@ -4615,7 +4615,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 10.16 0 180)
 					(length 2.54)
 					(name "A"
@@ -4633,7 +4633,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 10.16 270)
 					(length 2.54)
 					(name "VCC"
@@ -4651,7 +4651,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at -10.16 -5.08 0)
 					(length 2.54)
 					(name "SEL"
@@ -5007,6 +5007,102 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:VBUS"
 			(power)
 			(pin_numbers hide)
@@ -5127,6 +5223,12 @@
 				)
 			)
 		)
+	)
+	(junction
+		(at 238.76 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "005b7bfa-021e-40bc-b8bf-88be204e3e96")
 	)
 	(junction
 		(at 39.37 81.28)
@@ -5339,6 +5441,12 @@
 		(uuid "c86ad8a3-fd08-4b54-8551-94f41e13fdc3")
 	)
 	(junction
+		(at 260.35 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c91dbf36-54ff-4373-a377-9def6849a92e")
+	)
+	(junction
 		(at 100.33 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5393,8 +5501,84 @@
 		(uuid "fed2bd1e-1dc9-40ff-887d-e912aa58c8aa")
 	)
 	(no_connect
+		(at 135.89 54.61)
+		(uuid "04da00dd-f892-41f2-b8e7-948b73871450")
+	)
+	(no_connect
+		(at 135.89 49.53)
+		(uuid "072800ce-3a05-47d6-904f-c54130a0f1c4")
+	)
+	(no_connect
+		(at 102.87 77.47)
+		(uuid "07435bcd-8fea-4c1d-bdfe-3c0205852f7b")
+	)
+	(no_connect
+		(at 102.87 110.49)
+		(uuid "1f6e0053-d82e-40b6-98be-1b7bada0702b")
+	)
+	(no_connect
 		(at 245.11 63.5)
 		(uuid "22340fec-82d8-44d7-b803-db1a1f681f33")
+	)
+	(no_connect
+		(at 102.87 62.23)
+		(uuid "3e798a0f-5391-4cdb-bed1-2b5b7b7d524c")
+	)
+	(no_connect
+		(at 135.89 57.15)
+		(uuid "494633fd-80e7-4f80-8c91-7703e2811993")
+	)
+	(no_connect
+		(at 102.87 82.55)
+		(uuid "4a7ed54f-a258-4fd4-bb6d-9ec63827cd96")
+	)
+	(no_connect
+		(at 102.87 69.85)
+		(uuid "58b247f8-db19-4f72-9c41-300dd1ec5741")
+	)
+	(no_connect
+		(at 102.87 59.69)
+		(uuid "653847cd-672d-4df3-b07e-9510e96cfec4")
+	)
+	(no_connect
+		(at 102.87 57.15)
+		(uuid "67ef786a-8b54-461c-8117-35674514fc0b")
+	)
+	(no_connect
+		(at 102.87 113.03)
+		(uuid "764ba206-8b1a-4145-8876-27f03c2feabf")
+	)
+	(no_connect
+		(at 135.89 46.99)
+		(uuid "790663cc-6af0-4ccd-8a63-59a85d95cad6")
+	)
+	(no_connect
+		(at 102.87 72.39)
+		(uuid "7e44ecb5-f052-42d3-962b-67d4df77a497")
+	)
+	(no_connect
+		(at 102.87 100.33)
+		(uuid "a518cba9-cd5d-4083-889f-302e26bd769d")
+	)
+	(no_connect
+		(at 102.87 115.57)
+		(uuid "ac8b1206-48ec-4465-9b7b-644c24668003")
+	)
+	(no_connect
+		(at 102.87 80.01)
+		(uuid "add3213d-3833-435e-a8c6-e8eacaadd83e")
+	)
+	(no_connect
+		(at 102.87 95.25)
+		(uuid "b253e9bc-30da-4985-8bc0-dea15c32054b")
+	)
+	(no_connect
+		(at 102.87 67.31)
+		(uuid "b48b3a2f-fe5d-41e1-921a-508b9840b3cd")
+	)
+	(no_connect
+		(at 102.87 90.17)
+		(uuid "bb4bc229-df06-4dd3-ac32-0f86d105b7b3")
 	)
 	(no_connect
 		(at 224.79 142.24)
@@ -5403,6 +5587,26 @@
 	(no_connect
 		(at 245.11 60.96)
 		(uuid "d2d71b15-5991-4237-ac2c-744e963206ad")
+	)
+	(no_connect
+		(at 102.87 102.87)
+		(uuid "e71704c1-b3c3-425c-811c-d5b487bc956a")
+	)
+	(no_connect
+		(at 102.87 107.95)
+		(uuid "e8f3bd1e-3850-4be4-9692-48ac24ce2290")
+	)
+	(no_connect
+		(at 102.87 105.41)
+		(uuid "f807d671-86e9-4a61-a685-34d56c5bfccc")
+	)
+	(no_connect
+		(at 135.89 77.47)
+		(uuid "f8fe2a45-4452-4007-b3c6-4edf8ef9c923")
+	)
+	(no_connect
+		(at 102.87 64.77)
+		(uuid "fb108404-2d91-4b7a-92de-760f51292774")
 	)
 	(wire
 		(pts
@@ -5826,6 +6030,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 73.66) (xy 260.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "324180bc-bab3-40a5-9789-c3c6a18a1bc0")
+	)
+	(wire
+		(pts
 			(xy 135.89 74.93) (xy 156.21 74.93)
 		)
 		(stroke
@@ -6106,6 +6320,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 33.02) (xy 231.14 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cf02609-ba93-4e9e-8262-454992ede453")
+	)
+	(wire
+		(pts
 			(xy 135.89 41.91) (xy 156.21 41.91)
 		)
 		(stroke
@@ -6236,7 +6460,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 33.02) (xy 241.3 33.02)
+			(xy 245.11 33.02) (xy 238.76 33.02)
 		)
 		(stroke
 			(width 0)
@@ -6286,7 +6510,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 33.02) (xy 241.3 29.21)
+			(xy 231.14 33.02) (xy 231.14 29.21)
 		)
 		(stroke
 			(width 0)
@@ -12881,7 +13105,7 @@
 			(uuid "a623cdde-4912-4c3b-82b0-34d3272445e8")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0109")
 					(unit 1)
@@ -13005,7 +13229,7 @@
 			(uuid "366803c8-a600-42cc-a877-17adc299c986")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "J101")
 					(unit 1)
@@ -13071,7 +13295,7 @@
 			(uuid "d84ef70a-dc57-4915-a421-957e62b83713")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0130")
 					(unit 1)
@@ -13166,7 +13390,7 @@
 			(uuid "a6aad96e-cd3b-4078-99bb-ee7cbb0f51e2")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U104")
 					(unit 1)
@@ -13235,6 +13459,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C213161"
+			(at 198.12 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "fcc4f4e2-85a0-4c74-ab4e-39835d1eeb2e")
 		)
@@ -13254,7 +13487,7 @@
 			(uuid "ee2e9273-1bb7-406e-a9b3-08b02a97b4ff")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U103")
 					(unit 1)
@@ -13320,7 +13553,7 @@
 			(uuid "57f690b8-3fe2-477b-917a-54ba996f81c6")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0124")
 					(unit 1)
@@ -13399,7 +13632,7 @@
 			(uuid "8ca1b361-9698-4519-86ed-3773baf760b4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C116")
 					(unit 1)
@@ -13465,7 +13698,7 @@
 			(uuid "c2b2230b-9fe8-46e1-aef8-43f771873282")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0111")
 					(unit 1)
@@ -13531,7 +13764,7 @@
 			(uuid "2dece54a-9a46-45d4-85fc-4b045e2f67c0")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0132")
 					(unit 1)
@@ -13610,7 +13843,7 @@
 			(uuid "9b0de2dc-06d8-4350-b6fe-c1e0b512662a")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C115")
 					(unit 1)
@@ -13676,7 +13909,7 @@
 			(uuid "13f0dea1-c35c-48fa-9b75-df1480eea592")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0103")
 					(unit 1)
@@ -13686,7 +13919,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 241.3 29.21 0)
+		(at 231.14 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13695,7 +13928,7 @@
 		(fields_autoplaced yes)
 		(uuid "37a1b8e3-0ac7-48f7-b3a3-4cfc245fecf5")
 		(property "Reference" "#PWR0104"
-			(at 241.3 33.02 0)
+			(at 231.14 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13704,7 +13937,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 241.3 24.13 0)
+			(at 231.14 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13712,7 +13945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 241.3 29.21 0)
+			(at 231.14 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13721,7 +13954,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 241.3 29.21 0)
+			(at 231.14 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13730,7 +13963,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 241.3 29.21 0)
+			(at 231.14 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13742,7 +13975,7 @@
 			(uuid "f8301d53-d2cb-4ec9-bdea-b41e703d3576")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0104")
 					(unit 1)
@@ -13820,7 +14053,7 @@
 			(uuid "d9281f25-eff9-46fa-82e5-8938b8f902ff")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C103")
 					(unit 1)
@@ -13899,7 +14132,7 @@
 			(uuid "349ca6f9-4ada-47c2-9d0a-392582b3fb0c")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C113")
 					(unit 1)
@@ -13976,7 +14209,7 @@
 			(uuid "0c9ab671-5b37-433a-bf37-782b7fbc9386")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "SW102")
 					(unit 1)
@@ -14054,7 +14287,7 @@
 			(uuid "637fa150-6067-4bee-a88e-4123ab0cc718")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C104")
 					(unit 1)
@@ -14275,7 +14508,7 @@
 			(uuid "c97d3303-790d-4cb2-85cc-0d19ecb35b4e")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U102")
 					(unit 1)
@@ -14341,7 +14574,7 @@
 			(uuid "219b9d53-4695-4273-935e-e453aab0294b")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0107")
 					(unit 1)
@@ -14407,7 +14640,7 @@
 			(uuid "3bb3a2fe-0c5c-4299-800f-96f0a69b753a")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0128")
 					(unit 1)
@@ -14473,7 +14706,7 @@
 			(uuid "6b236306-4a7b-4cbd-81b1-b3ba2ae14c4d")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0126")
 					(unit 1)
@@ -14539,7 +14772,7 @@
 			(uuid "78438ac5-6511-4901-b54f-9a3811efdec5")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0108")
 					(unit 1)
@@ -14605,7 +14838,7 @@
 			(uuid "e7593112-23bc-4d5e-9ad4-6177ff215d88")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0113")
 					(unit 1)
@@ -14671,7 +14904,7 @@
 			(uuid "9f06455b-a8fb-4842-a0ca-60414a64e4cd")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0131")
 					(unit 1)
@@ -14749,7 +14982,7 @@
 			(uuid "1f388a84-c339-4047-825d-8f6b19787feb")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "R101")
 					(unit 1)
@@ -14815,7 +15048,7 @@
 			(uuid "6c1752a6-d33b-4217-9d82-e9f3fa9bb6f8")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0102")
 					(unit 1)
@@ -14906,7 +15139,7 @@
 			(uuid "754a6399-24b0-4733-9b57-56df692b2995")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U101")
 					(unit 1)
@@ -14983,7 +15216,7 @@
 			(uuid "a235d951-bd4c-4c79-8dce-faae077acfb4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "SW101")
 					(unit 1)
@@ -15062,7 +15295,7 @@
 			(uuid "a952dec0-67c9-4634-9dff-303d1e850707")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C117")
 					(unit 1)
@@ -15128,7 +15361,7 @@
 			(uuid "67cb928b-39a4-4aae-814f-6af236697326")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0112")
 					(unit 1)
@@ -15195,7 +15428,7 @@
 			(uuid "4af7d4c3-24de-4b9c-acda-954f18b10cb4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "H101")
 					(unit 1)
@@ -15278,7 +15511,7 @@
 			(uuid "10bead11-70ec-4e36-aa84-6e649b206d6c")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "RV102")
 					(unit 1)
@@ -15343,7 +15576,7 @@
 			(uuid "ceb478cc-0fc0-4a68-bdd0-37eaa6af73c5")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0122")
 					(unit 1)
@@ -15409,7 +15642,7 @@
 			(uuid "b5fcb4d6-4645-4810-b5d3-d0a2b6ef41f0")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0125")
 					(unit 1)
@@ -15475,7 +15708,7 @@
 			(uuid "3e3fc249-271e-49a5-af36-4b0e864827b7")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0123")
 					(unit 1)
@@ -15553,7 +15786,7 @@
 			(uuid "8e87802b-0209-4e9e-a3b5-70cee5c5c48f")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C101")
 					(unit 1)
@@ -15631,7 +15864,7 @@
 			(uuid "7d4fb981-9d1f-405e-b840-0259ced1bcb2")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C109")
 					(unit 1)
@@ -15709,7 +15942,7 @@
 			(uuid "8e582f03-aefd-433d-bf33-4a25ca049ad5")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "R102")
 					(unit 1)
@@ -15776,7 +16009,7 @@
 			(uuid "0d5f4a0a-eb8b-49ec-a37d-89781b4f385b")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0127")
 					(unit 1)
@@ -15859,7 +16092,7 @@
 			(uuid "0b89a1f9-b37a-452f-a48a-ea9b43b9a503")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "Y101")
 					(unit 1)
@@ -15893,7 +16126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
 			(at 104.14 175.26 0)
 			(effects
 				(font
@@ -15929,6 +16162,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C71136"
+			(at 104.14 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "73f557e6-2da8-41b8-92bb-e468cbe1b68e")
 		)
@@ -15939,7 +16181,7 @@
 			(uuid "2e370085-e1e6-4b15-acf2-752f3a71d13e")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U106")
 					(unit 1)
@@ -16005,7 +16247,7 @@
 			(uuid "5586537f-327d-4712-926c-77feae4fe034")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0106")
 					(unit 1)
@@ -16084,7 +16326,7 @@
 			(uuid "a065661b-6bfc-461d-98b2-087b3c9ea444")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C106")
 					(unit 1)
@@ -16163,7 +16405,7 @@
 			(uuid "a17a6564-0ed6-455e-91ab-073316ac4402")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C105")
 					(unit 1)
@@ -16229,7 +16471,7 @@
 			(uuid "a46a5f14-1785-49a0-8ce3-7a77deb92a22")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0118")
 					(unit 1)
@@ -16295,9 +16537,75 @@
 			(uuid "93dbf154-f964-4dd4-ba73-7d2bb25175b3")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 238.76 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a12909f2-8aad-400b-94e5-05a08316b415")
+		(property "Reference" "#FLG0101"
+			(at 238.76 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 238.76 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 238.76 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bf447e0-a0a6-4590-99cd-db11c41d9229")
+		)
+		(instances
+			(project "illuminator"
+				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
+					(reference "#FLG0101")
 					(unit 1)
 				)
 			)
@@ -16361,7 +16669,7 @@
 			(uuid "20948531-3ef9-422e-bd75-97c6b7cde4a1")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0116")
 					(unit 1)
@@ -16457,7 +16765,7 @@
 			(uuid "a6aad96e-cd3b-4078-99bb-ee7cbb0f51e3")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U104")
 					(unit 3)
@@ -16491,7 +16799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
+		(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
 			(at 55.88 170.18 0)
 			(effects
 				(font
@@ -16527,6 +16835,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" "C16106"
+			(at 55.88 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2a9e3bc3-1080-42e4-8f16-4ac5e0836f4d")
 		)
@@ -16537,7 +16854,7 @@
 			(uuid "6e907d55-34fd-44de-afaa-437c0203c265")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U105")
 					(unit 1)
@@ -16616,7 +16933,7 @@
 			(uuid "bacd69b1-07c0-46bc-bfc9-a927550ac0d5")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C112")
 					(unit 1)
@@ -16694,7 +17011,7 @@
 			(uuid "79a92df3-51cd-45e5-bc74-a85e30539493")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C102")
 					(unit 1)
@@ -16773,7 +17090,7 @@
 			(uuid "65faf193-45cb-4063-bd39-9fe87dbf3e1e")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C110")
 					(unit 1)
@@ -16854,7 +17171,7 @@
 			(uuid "d7068c18-ffcd-487f-8690-42c52f2aaacb")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "RV101")
 					(unit 1)
@@ -16920,7 +17237,7 @@
 			(uuid "c3edbb77-8d4d-44db-b98f-53a1afc48075")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0117")
 					(unit 1)
@@ -16986,7 +17303,7 @@
 			(uuid "61af53e0-5b7b-402c-8072-e9e1746aeb92")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0129")
 					(unit 1)
@@ -17053,7 +17370,7 @@
 			(uuid "5d58bdf9-6bd5-4abb-94d0-a7901850d503")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0120")
 					(unit 1)
@@ -17120,7 +17437,7 @@
 			(uuid "75cb3e14-e65b-4a7e-8214-58e9c92dc094")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0114")
 					(unit 1)
@@ -17190,7 +17507,7 @@
 			(uuid "8e3f63c9-5cf6-4743-a725-e8d85071333a")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "J103")
 					(unit 1)
@@ -17269,9 +17586,75 @@
 			(uuid "573aebf1-f674-4e15-a572-a3a177211bfe")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 250.19 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4365969-0f88-48d9-ba87-97dd07b424bf")
+		(property "Reference" "#FLG0102"
+			(at 250.19 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 250.19 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 250.19 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bbafa36d-aee3-44bb-aa11-5faca5509f9b")
+		)
+		(instances
+			(project "illuminator"
+				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
+					(reference "#FLG0102")
 					(unit 1)
 				)
 			)
@@ -17335,7 +17718,7 @@
 			(uuid "bcc3f997-1d66-4a58-ab9d-23591cb6d685")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0105")
 					(unit 1)
@@ -17413,7 +17796,7 @@
 			(uuid "ba340818-0e12-4343-b92d-9b441fa6235c")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "R103")
 					(unit 1)
@@ -17508,7 +17891,7 @@
 			(uuid "a6aad96e-cd3b-4078-99bb-ee7cbb0f51e4")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "U104")
 					(unit 2)
@@ -17574,7 +17957,7 @@
 			(uuid "89ac2012-d567-4049-98dd-8ffd4cfc89ac")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0115")
 					(unit 1)
@@ -17652,7 +18035,7 @@
 			(uuid "4ce1a838-976c-4f36-b521-8b2519f1bb1b")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C107")
 					(unit 1)
@@ -17718,7 +18101,7 @@
 			(uuid "db9588ad-b029-4188-a71a-fff9893439cf")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0110")
 					(unit 1)
@@ -17785,7 +18168,7 @@
 			(uuid "28e9a5c1-dfa9-44ee-9ec4-3cdfac9e6eab")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0119")
 					(unit 1)
@@ -17867,7 +18250,7 @@
 			(uuid "93e211c2-66bf-44d9-9400-b891ea7876fa")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "J102")
 					(unit 1)
@@ -17946,7 +18329,7 @@
 			(uuid "c5ea1448-8698-409f-8248-eb8a5d705609")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C114")
 					(unit 1)
@@ -18012,7 +18395,7 @@
 			(uuid "5e7ee241-d24d-4cdd-8836-db3f72762b2b")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "#PWR0101")
 					(unit 1)
@@ -18090,7 +18473,7 @@
 			(uuid "81aeecdf-b8cf-4e45-ba0c-6ea7f93bb701")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(reference "C108")
 					(unit 1)
@@ -18139,7 +18522,7 @@
 			(uuid "3836ef3f-a391-4928-bfee-ee9f29848e56")
 		)
 		(instances
-			(project "controller"
+			(project "illuminator"
 				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
 					(page "2")
 				)
