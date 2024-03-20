@@ -4253,7 +4253,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 				(at 0 -13.97 0)
 				(effects
 					(font
@@ -4377,7 +4377,7 @@
 					)
 				)
 			)
-			(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -5249,7 +5249,7 @@
 		(uuid "1081e994-b236-4b59-858f-291278dfbb7d")
 	)
 	(junction
-		(at 198.12 90.17)
+		(at 191.77 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1e889b43-70dc-4c1d-a396-bf94f24f8dd3")
@@ -5357,7 +5357,7 @@
 		(uuid "7d71a44f-91df-4ab0-852e-eea7b999683a")
 	)
 	(junction
-		(at 198.12 115.57)
+		(at 191.77 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "80096a06-76c3-4f68-9deb-f1dff3421cb1")
@@ -5630,7 +5630,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 102.87) (xy 223.52 102.87)
+			(xy 201.93 102.87) (xy 214.63 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5670,7 +5670,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 114.3) (xy 241.3 114.3)
+			(xy 220.98 114.3) (xy 228.6 114.3)
 		)
 		(stroke
 			(width 0)
@@ -5700,7 +5700,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 90.17) (xy 209.55 90.17)
+			(xy 191.77 90.17) (xy 203.2 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5760,7 +5760,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 90.17) (xy 209.55 91.44)
+			(xy 203.2 90.17) (xy 203.2 91.44)
 		)
 		(stroke
 			(width 0)
@@ -5770,7 +5770,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 97.79) (xy 187.96 97.79)
+			(xy 163.83 97.79) (xy 181.61 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6100,7 +6100,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 115.57) (xy 198.12 118.11)
+			(xy 191.77 115.57) (xy 191.77 118.11)
 		)
 		(stroke
 			(width 0)
@@ -6280,7 +6280,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 107.95) (xy 187.96 107.95)
+			(xy 163.83 107.95) (xy 181.61 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6580,7 +6580,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 90.17) (xy 198.12 92.71)
+			(xy 191.77 90.17) (xy 191.77 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6750,7 +6750,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 87.63) (xy 198.12 90.17)
+			(xy 191.77 87.63) (xy 191.77 90.17)
 		)
 		(stroke
 			(width 0)
@@ -6760,7 +6760,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 96.52) (xy 209.55 97.79)
+			(xy 203.2 96.52) (xy 203.2 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6840,7 +6840,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 102.87) (xy 184.15 102.87)
+			(xy 181.61 102.87) (xy 177.8 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6850,7 +6850,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 115.57) (xy 198.12 115.57)
+			(xy 177.8 115.57) (xy 191.77 115.57)
 		)
 		(stroke
 			(width 0)
@@ -6980,7 +6980,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 113.03) (xy 198.12 115.57)
+			(xy 191.77 113.03) (xy 191.77 115.57)
 		)
 		(stroke
 			(width 0)
@@ -7220,7 +7220,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 102.87) (xy 184.15 115.57)
+			(xy 177.8 102.87) (xy 177.8 115.57)
 		)
 		(stroke
 			(width 0)
@@ -7320,6 +7320,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 114.3) (xy 241.3 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deaf4a26-a95b-468a-ac17-6abe85127223")
+	)
+	(wire
+		(pts
 			(xy 241.3 50.8) (xy 241.3 53.34)
 		)
 		(stroke
@@ -7357,6 +7367,16 @@
 			(type default)
 		)
 		(uuid "e6995ba5-7c25-4ac1-a548-6958d9627816")
+	)
+	(wire
+		(pts
+			(xy 219.71 102.87) (xy 223.52 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8b5d62e-88c3-488e-8551-5665a2ea4416")
 	)
 	(wire
 		(pts
@@ -12861,7 +12881,7 @@
 		(uuid "80085026-41ca-4bf2-9b14-341a7e3090d1")
 	)
 	(label "TIM1_CH1"
-		(at 170.18 107.95 0)
+		(at 163.83 107.95 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12927,7 +12947,7 @@
 		(uuid "98b69aac-dc22-40a8-9be6-1867b7a1e3eb")
 	)
 	(label "OPAMP1_VOUT"
-		(at 170.18 97.79 0)
+		(at 163.83 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13400,7 +13420,7 @@
 	)
 	(symbol
 		(lib_id "easyeda2kicad:WAS3157B-6_TR")
-		(at 198.12 102.87 0)
+		(at 191.77 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13408,7 +13428,7 @@
 		(dnp no)
 		(uuid "0e288649-8872-4dae-b082-fa007cd48896")
 		(property "Reference" "U103"
-			(at 201.93 113.03 0)
+			(at 195.58 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13416,7 +13436,7 @@
 			)
 		)
 		(property "Value" "WAS3157B-6/TR"
-			(at 208.28 115.57 0)
+			(at 201.93 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13424,7 +13444,7 @@
 			)
 		)
 		(property "Footprint" "easyeda2kicad:SOT-363_L2.0-W1.3-P0.65-LS2.1-BL"
-			(at 198.12 120.65 0)
+			(at 191.77 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13433,7 +13453,7 @@
 			)
 		)
 		(property "Datasheet" "https://lcsc.com/product-detail/Analog-Switches_Will-Semicon-WAS3157B-6-TR_C213161.html"
-			(at 198.12 123.19 0)
+			(at 191.77 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13442,7 +13462,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 198.12 102.87 0)
+			(at 191.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13451,7 +13471,7 @@
 			)
 		)
 		(property "LCSC ID" "C213161"
-			(at 198.12 102.87 0)
+			(at 191.77 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13460,7 +13480,7 @@
 			)
 		)
 		(property "LCSC Part" "C213161"
-			(at 198.12 125.73 0)
+			(at 191.77 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14649,6 +14669,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 217.17 102.87 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4680090b-53c7-4900-bcbc-9a096e0690cd")
+		(property "Reference" "R104"
+			(at 217.17 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 217.17 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC ID" "C17168"
+			(at 217.17 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d139be5a-b58e-43e1-9394-db4fa3ef9367")
+		)
+		(pin "2"
+			(uuid "e2d18347-d288-4436-a090-5eb491b64095")
+		)
+		(instances
+			(project "illuminator"
+				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 72.39 173.99 0)
 		(unit 1)
@@ -15521,7 +15618,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 209.55 97.79 0)
+		(at 203.2 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15529,7 +15626,7 @@
 		(dnp no)
 		(uuid "606c9fac-2704-4e48-b559-a14ad972f868")
 		(property "Reference" "#PWR0122"
-			(at 209.55 104.14 0)
+			(at 203.2 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15538,7 +15635,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 214.63 99.06 0)
+			(at 208.28 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15546,7 +15643,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 209.55 97.79 0)
+			(at 203.2 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15555,7 +15652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 97.79 0)
+			(at 203.2 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15564,7 +15661,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 209.55 97.79 0)
+			(at 203.2 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16126,7 +16223,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 			(at 104.14 175.26 0)
 			(effects
 				(font
@@ -16336,7 +16433,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 209.55 93.98 0)
+		(at 203.2 93.98 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16345,7 +16442,7 @@
 		(dnp no)
 		(uuid "8d2b6f24-a29f-4586-aeb4-0d0ea8550780")
 		(property "Reference" "C105"
-			(at 212.09 92.7162 0)
+			(at 205.74 92.7162 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16354,7 +16451,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 212.09 95.2562 0)
+			(at 205.74 95.2562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16363,7 +16460,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 209.55 93.98 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16372,7 +16469,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 93.98 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16381,7 +16478,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 209.55 93.98 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16390,7 +16487,7 @@
 			)
 		)
 		(property "LCSC ID" "C307331"
-			(at 209.55 93.98 0)
+			(at 203.2 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16481,7 +16578,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 198.12 118.11 0)
+		(at 191.77 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16490,7 +16587,7 @@
 		(fields_autoplaced yes)
 		(uuid "99d30066-751d-40c2-9484-882c35bc4158")
 		(property "Reference" "#PWR0121"
-			(at 198.12 124.46 0)
+			(at 191.77 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16499,7 +16596,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 198.12 123.19 0)
+			(at 191.77 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16507,7 +16604,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 118.11 0)
+			(at 191.77 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16516,7 +16613,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 118.11 0)
+			(at 191.77 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16525,7 +16622,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 198.12 118.11 0)
+			(at 191.77 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16799,7 +16896,7 @@
 				)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SOT-89-3_L4.5-W2.5-P1.50-LS4.2-BR"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-89-3"
 			(at 55.88 170.18 0)
 			(effects
 				(font
@@ -17180,6 +17277,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 231.14 114.3 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5ca336c-9f5e-446a-a704-10b1399577ee")
+		(property "Reference" "R105"
+			(at 231.14 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 231.14 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 231.14 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 231.14 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC ID" "C17168"
+			(at 231.14 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8239bba6-9064-4a94-8525-3365826c5cff")
+		)
+		(pin "2"
+			(uuid "497e945b-9ba5-4e48-a8d9-e1916c8b0c44")
+		)
+		(instances
+			(project "illuminator"
+				(path "/acb50d16-19ca-41e0-a3c9-c32dd495407e"
+					(reference "R105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 87.63 153.67 0)
 		(unit 1)
@@ -17313,7 +17487,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 198.12 87.63 0)
+		(at 191.77 87.63 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17323,7 +17497,7 @@
 		(fields_autoplaced yes)
 		(uuid "cc3f7413-873e-4473-8e1b-a319b22a2933")
 		(property "Reference" "#PWR0120"
-			(at 198.12 91.44 0)
+			(at 191.77 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17332,7 +17506,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 198.12 82.55 0)
+			(at 191.77 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17340,7 +17514,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 198.12 87.63 0)
+			(at 191.77 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17349,7 +17523,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 198.12 87.63 0)
+			(at 191.77 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17358,7 +17532,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 198.12 87.63 0)
+			(at 191.77 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
