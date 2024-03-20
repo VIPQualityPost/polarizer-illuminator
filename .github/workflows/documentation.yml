@@ -1,12 +1,6 @@
 name: Assembly Documentation
 
-on:
-  pull_request:
-    branches:
-      - main
-    types:
-      - closed
-  
+on:  
   push:
     branches:
       - main
@@ -66,15 +60,11 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config --global user.email "robot@website.com"
+          git config --global user.email "robot@mateijordache.info"
           git config --global user.name "robot"
-          git fetch 
-          git checkout ${documentation_branch}
-          git add ${workflow_project_dir}/outputs/*
+          git add ${workflow_project_dir}/*.pdf
           git commit -m "Add design file PDFs to repo [skip ci]"
-          git push origin ${documentation_branch}
-          gh pr create --head ${documentation_branch} --base main --title "Add design files to repo" --body "Automated PR from GHA"
-
+          git push -u origin main 
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
