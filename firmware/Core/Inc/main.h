@@ -42,7 +42,9 @@ extern "C" {
 #include "stm32g4xx_ll_exti.h"
 
 #include "tusb.h"
+#include "tusb_config.h"
 #include "class/cdc/cdc_device.h"
+// #include "typec/pd_types.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */

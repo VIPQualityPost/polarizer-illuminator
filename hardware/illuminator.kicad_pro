@@ -571,7 +571,7 @@
       "plot": "/Users/mateijordache/Desktop/gerbs/",
       "pos_files": "/Users/mateijordache/Desktop/pos/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../mechanical/illuminator-pcb.step",
       "svg": "",
       "vrml": ""
     },

@@ -127,7 +127,7 @@ C_INCLUDES =  \
 -ICore/Lib/tinyusb/src/portable/st/typec \
 -ICore/Lib/tinyusb/src/osal \
 -ICore/Lib/tinyusb/src/host \
--ICore/Lib/tinyusb/src/typec \
+-ICore/Lib/tinyusb/src/typec 
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
