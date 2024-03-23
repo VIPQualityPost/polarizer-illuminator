@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'hardware/*'
 
 env:
   workflow_project_dir: hardware

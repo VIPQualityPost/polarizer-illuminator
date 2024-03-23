@@ -14215,7 +14215,6 @@
 	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 80.01 97.79 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14238,7 +14237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_Tactile_SKHH_Angled"
+		(property "Footprint" "easyeda2kicad:KEY-TH_SKHHLWA010"
 			(at 80.01 92.71 0)
 			(effects
 				(font
