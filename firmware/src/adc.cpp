@@ -60,8 +60,7 @@ void init_adc(void)
     rtt.println("Issue configuring ADC channel 2.");
   }
 
-  // HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-
+  HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
 }
 
 void gpio_config_adc(ADC_HandleTypeDef* adcHandle)
@@ -73,13 +72,13 @@ void gpio_config_adc(ADC_HandleTypeDef* adcHandle)
   {
     PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC12;
     PeriphClkInit.Adc12ClockSelection = RCC_ADC12CLKSOURCE_SYSCLK;
+
     if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
     {
       rtt.println("ADC DMA Clock configuration failed.");
     }
 
     __HAL_RCC_ADC12_CLK_ENABLE();
-
     __HAL_RCC_GPIOA_CLK_ENABLE();
     /**ADC1 GPIO Configuration
     PA0     ------> ADC1_IN1
@@ -107,7 +106,7 @@ void gpio_config_adc(ADC_HandleTypeDef* adcHandle)
 
     __HAL_LINKDMA(adcHandle,DMA_Handle,hdma_adc1);
 
-    HAL_NVIC_SetPriority(ADC1_2_IRQn, 0, 0);
-    HAL_NVIC_EnableIRQ(ADC1_2_IRQn);
+    // HAL_NVIC_SetPriority(ADC1_2_IRQn, 0, 0);
+    // HAL_NVIC_EnableIRQ(ADC1_2_IRQn);
   }
 }

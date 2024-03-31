@@ -40,26 +40,28 @@ void setup() {
 
   init_dma();
 
-  init_adc();
   gpio_config_adc(&hadc1);
-
-  init_dac();
-  __HAL_RCC_DAC3_CLK_ENABLE();
-
-  init_opa();
-  gpio_config_opa(&hopamp1);
-  HAL_OPAMP_Start(&hopamp1);
-
+  init_adc();
   HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_data, 2);
+
+  __HAL_RCC_DAC3_CLK_ENABLE();
+  init_dac();
+
+  gpio_config_opa(&hopamp1);
+  init_opa();
   
-  TIM_TypeDef *IlluminatorTimer = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(PA5), PinMap_PWM);
+  HAL_OPAMP_Start(&hopamp1);
+  HAL_DAC_Start(&hdac3, DAC_CHANNEL_1);
+  DAC3->CR |= DAC_CR_CEN1;
+  
+  TIM_TypeDef* IlluminatorTimer = (TIM_TypeDef*)pinmap_peripheral(digitalPinToPinName(PA5), PinMap_PWM);
   uint32_t IlluminatorChannel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(PA5), PinMap_PWM));
   HardwareTimer* Illuminator = new HardwareTimer(IlluminatorTimer);
   Illuminator->setMode(IlluminatorChannel, TIMER_OUTPUT_COMPARE_PWM1, PA5);
   Illuminator->setOverflow(2000, HERTZ_FORMAT);
   Illuminator->setCaptureCompare(IlluminatorChannel, 90, HERTZ_COMPARE_FORMAT);
 
-  TIM_TypeDef *PolarizerTimer = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(PA8), PinMap_PWM);
+  TIM_TypeDef *PolarizerTimer = (TIM_TypeDef*)pinmap_peripheral(digitalPinToPinName(PA8), PinMap_PWM);
   uint32_t PolarizerChannel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(PA8), PinMap_PWM));
   HardwareTimer* Polarizer = new HardwareTimer(PolarizerTimer);
   Polarizer->setMode(PolarizerChannel, TIMER_OUTPUT_COMPARE_PWM1, PA8);
@@ -71,8 +73,8 @@ void setup() {
 }
 
 void loop(){ 
-  HAL_DAC_SetValue(&hdac3, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc_data[0]);
-  TIM2->CCR1 = adc_data[1];
+  DAC3->DHR12R1 = analogRead(PA0) << 2;
+  TIM2->CCR1 = analogRead(PA1) << 6;
 }
 
 void userButton(void){

@@ -1,16 +1,10 @@
 #ifndef __DMA_H__
 #define __DMA_H__
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "stm32g4xx_hal.h"
 
-void init_dma(void);
+extern DMA_HandleTypeDef hdma_adc1;
 
-#ifdef __cplusplus
-}
-#endif
+void init_dma(void);
 
 #endif

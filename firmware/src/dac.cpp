@@ -32,8 +32,6 @@ void init_dac(void)
   }
 
   HAL_DACEx_SelfCalibrate(&hdac3, &sConfig, DAC_CHANNEL_1);
-  HAL_DAC_Start(&hdac3, DAC_CHANNEL_1);
-
 }
 
 // void HAL_DAC_MspInit(DAC_HandleTypeDef* dacHandle)
