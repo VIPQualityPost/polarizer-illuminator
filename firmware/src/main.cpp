@@ -15,16 +15,16 @@
 #define USBD_MANUFACTURER_STRING "matei repair lab"
 #define USBD_PRODUCT_STRING_FS "illuminator"
 
-RTTStream rtt;
-
 extern ADC_HandleTypeDef hadc1;
 extern DAC_HandleTypeDef hdac3;
 extern OPAMP_HandleTypeDef hopamp1;
 
-bool enabled = true;
-uint16_t adc_data[2] = {0};
+RTTStream rtt;
 
 void userButton();
+
+bool enabled = true;
+uint16_t adc_data[2] = {0};
 
 void setup() {
   pinMode(PB8, INPUT);
@@ -32,7 +32,6 @@ void setup() {
   pinMode(PA1, INPUT_ANALOG);
   pinMode(PA5, OUTPUT);
   pinMode(PA8, OUTPUT);
-  pinMode(PA2, INPUT);
 
   attachInterrupt(PB8, userButton, RISING);
 
@@ -41,8 +40,8 @@ void setup() {
 
   init_dma();
 
-  // init_adc();
-  // gpio_config_adc(&hadc1);
+  init_adc();
+  gpio_config_adc(&hadc1);
 
   init_dac();
   __HAL_RCC_DAC3_CLK_ENABLE();
@@ -51,7 +50,7 @@ void setup() {
   gpio_config_opa(&hopamp1);
   HAL_OPAMP_Start(&hopamp1);
 
-  // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_data, 2);
+  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_data, 2);
   
   TIM_TypeDef *IlluminatorTimer = (TIM_TypeDef *)pinmap_peripheral(digitalPinToPinName(PA5), PinMap_PWM);
   uint32_t IlluminatorChannel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(PA5), PinMap_PWM));
@@ -72,11 +71,8 @@ void setup() {
 }
 
 void loop(){ 
-  adc_data[1] = analogRead(PA0) << 6;
-  adc_data[0] = analogRead(PA1) << 6;
-
-  TIM2->CCR1 = adc_data[0];
-  HAL_DAC_SetValue(&hdac3, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc_data[1]);
+  HAL_DAC_SetValue(&hdac3, DAC_CHANNEL_1, DAC_ALIGN_12B_R, adc_data[0]);
+  TIM2->CCR1 = adc_data[1];
 }
 
 void userButton(void){

@@ -7,6 +7,7 @@ extern "C" {
 
 #include "stm32g4xx_hal.h"
 #include "stm32g4xx_hal_adc.h"
+#include "stm32g4xx_hal_dma.h"
 
 extern ADC_HandleTypeDef hadc1;
 
