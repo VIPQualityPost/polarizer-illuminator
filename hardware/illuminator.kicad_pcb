@@ -14132,7 +14132,7 @@
 		)
 		(fp_arc
 			(start 10.656836 20.999983)
-			(mid 9.891468 20.847747)
+			(mid 9.891462 20.847753)
 			(end 9.242623 20.414196)
 			(stroke
 				(width 0.017)
@@ -14176,7 +14176,7 @@
 		)
 		(fp_arc
 			(start 30.160875 53.5)
-			(mid 28.989302 56.328425)
+			(mid 28.989302 56.328429)
 			(end 26.160875 57.5)
 			(stroke
 				(width 0.017)
@@ -16222,7 +16222,7 @@
 		(uuid "fcc387bb-bd0d-455d-ae68-adbaf629376f")
 		(at 139.8235 144.8435)
 		(property "Reference" "SW102"
-			(at 0 -5.27 360)
+			(at 0 -5.27 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5d6276e8-6054-488d-86fc-9493af5f4f4e")
@@ -16234,7 +16234,7 @@
 			)
 		)
 		(property "Value" "DFU"
-			(at 0 5.27 360)
+			(at 0 5.27 0)
 			(layer "F.Fab")
 			(uuid "8e27d1a3-2c75-4158-b86b-f5b3b35d54e3")
 			(effects
@@ -16441,7 +16441,7 @@
 			(uuid "6384795f-363f-40b1-ae22-aeb74ee2a52f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "934d8c5e-39eb-4280-a0bb-05c97a9b276c")
 			(effects

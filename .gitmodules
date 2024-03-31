@@ -1,3 +1,6 @@
 [submodule "firmware/Core/Lib/tinyusb"]
 	path = firmware/Core/Lib/tinyusb
 	url = https://github.com/hathach/tinyusb.git
+[submodule "firmware/lib/usb-pd-arduino"]
+	path = firmware/lib/usb-pd-arduino
+	url = https://github.com/manuelbl/usb-pd-arduino.git
