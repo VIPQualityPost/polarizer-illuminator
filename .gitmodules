@@ -4,6 +4,3 @@
 [submodule "firmware/lib/usb-pd-arduino"]
 	path = firmware/lib/usb-pd-arduino
 	url = https://github.com/manuelbl/usb-pd-arduino.git
-[submodule "firmware/firmware/lib/usb-pd-arduino"]
-	path = firmware/firmware/lib/usb-pd-arduino
-	url = https://github.com/manuelbl/usb-pd-arduino.git
