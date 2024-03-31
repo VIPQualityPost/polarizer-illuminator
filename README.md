@@ -8,4 +8,5 @@ A microscope illuminator that includes a liquid crystal display as a tunable pol
 
 ![Illuminator inspecting it's own board](images/side.png)
 | Non-polarized image | Polarized image |
+| --- | --- |
 | ![Image without polarization applied](images/clear.png) | ![Image with polarization applied](images/polarized.png) |
