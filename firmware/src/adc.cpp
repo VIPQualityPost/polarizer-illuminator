@@ -90,7 +90,7 @@ void gpio_config_adc(ADC_HandleTypeDef* adcHandle)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  hdma_adc1.Instance = DMA1_Channel5;
+  hdma_adc1.Instance = DMA1_Channel3;
   hdma_adc1.Init.Request = DMA_REQUEST_ADC1;
   hdma_adc1.Init.Direction = DMA_PERIPH_TO_MEMORY;
   hdma_adc1.Init.PeriphInc = DMA_PINC_DISABLE;
