@@ -51,6 +51,30 @@ void updateControls(void){
   togglePolarizer = !togglePolarizer;
 }
 
+void handlePDEvent(PDSinkEventType evt){
+  if(evt == PDSinkEventType::sourceCapabilitiesChanged){
+    // Search for 15V PDO
+    for(int i = 0; i < PowerSink.numSourceCapabilities; i+= 1){
+      if(PowerSink.sourceCapabilities[i].minVoltage <= 15000 && 
+        PowerSink.sourceCapabilities[i].maxVoltage >=15000){
+          PowerSink.requestPower(15000);
+          return;
+      }
+    }
+    // Try for 12V if no 15V PDO
+    for(int i = 0; i < PowerSink.numSourceCapabilities; i += 1){
+      if(PowerSink.sourceCapabilities[i].minVoltage <= 12000 &&
+        PowerSink.sourceCapabilities[i].maxVoltage >=12000){
+          PowerSink.requestPower(12000);
+          return;
+      }
+    }
+
+  PowerSink.requestPower(9000);
+  }
+
+}
+
 void setup() {
   pinMode(USER_BUTTON, INPUT);
   pinMode(LEFT_POT, INPUT_ANALOG);
@@ -59,17 +83,19 @@ void setup() {
   pinMode(LCD_PWM, OUTPUT);
   pinMode(LCD_OPA, OUTPUT);
 
-  attachInterrupt(PB8, userButton, RISING);
-
   PowerSink.start();
+  PowerSink.requestPower(9000);
+  PowerSink.requestPower(12000);
   PowerSink.requestPower(15000);
 
-  __HAL_RCC_DMAMUX1_CLK_ENABLE();
-  __HAL_RCC_DMA1_CLK_ENABLE();
+  // digitalWrite(LED_PWM, HIGH);
 
-  gpio_config_adc(&hadc1);
-  init_adc();
-  HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_data, 2);
+  // __HAL_RCC_DMAMUX1_CLK_ENABLE();
+  // __HAL_RCC_DMA1_CLK_ENABLE();
+
+  // gpio_config_adc(&hadc1);
+  // init_adc();
+  // HAL_ADC_Start_DMA(&hadc1, (uint32_t*)adc_data, 2);
 
   __HAL_RCC_DAC3_CLK_ENABLE();
   init_dac();
@@ -83,8 +109,8 @@ void setup() {
   TIM_TypeDef* IlluminatorTimer = TIM2;
   uint32_t IlluminatorChannel = STM_PIN_CHANNEL(pinmap_function(digitalPinToPinName(LED_PWM), PinMap_PWM));
   HardwareTimer* Illuminator = new HardwareTimer(IlluminatorTimer);
-  Illuminator->setMode(IlluminatorChannel, TIMER_OUTPUT_COMPARE_PWM1, PA5);
-  Illuminator->setOverflow(2000, HERTZ_FORMAT);
+  Illuminator->setMode(IlluminatorChannel, TIMER_OUTPUT_COMPARE_PWM1, LED_PWM);
+  Illuminator->setOverflow(5000, HERTZ_FORMAT);
 
   TIM_TypeDef *PolarizerTimer = TIM1;
   HardwareTimer* Polarizer = new HardwareTimer(PolarizerTimer);
@@ -93,6 +119,8 @@ void setup() {
 
   Illuminator->resume();
   Polarizer->resume();
+
+  attachInterrupt(PB8, userButton, RISING);
 }
 
 void loop(){ 
